@@ -1,10 +1,10 @@
 import { sp } from "../../utils/numbers";
-import styles from "./Main.module.css"
+import styles from "./Main.module.css";
 
 function Main({ posts }) {
   return (
     <div className={styles.container}>
-      {posts.data.posts.map((post) => (
+      {posts?.data.posts.map((post) => (
         <div key={post._id} className={styles.card}>
           <div className={styles.info}>
             <p>{post.options.title}</p>
