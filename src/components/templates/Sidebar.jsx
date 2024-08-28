@@ -5,7 +5,7 @@ function Sidebar({ categories }) {
     <div className={styles.sidebar}>
       <h4>دسته بندی ها</h4>
       <ul>
-        {categories.data.map((category) => (
+        {categories?.data.map((category) => (
           <li key={category._id}>
             <img src={`${category.icon}.svg`} alt={category.slug} />
             <p>{category.name}</p>
