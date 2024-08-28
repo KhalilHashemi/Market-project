@@ -15,5 +15,10 @@
       "src": "/api/(.*)",
       "dest": "/backend/main.js"
     }
-  ]
+  ],
+  "functions": {
+    "api/file.js": {
+      "includeFiles": "greet.cjs"
+    }
+  }
 }
