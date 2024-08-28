@@ -1,0 +1,35 @@
+.header {
+  border-bottom: 2px solid rgb(234, 234, 234);
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background-color: #fff;
+}
+.header div:nth-child(2) div.addPost a {
+  background-color: #a62626;
+  color: #fff;
+  transition: all 100ms linear;
+}
+.header div:nth-child(2) div.addPost a:hover {
+  background-color: #8c1b1b;
+}
+.header div:nth-child(2) button {
+  display: flex;
+  align-items: center;
+  padding: 10px 5px;
+  border-radius: 3px;
+}
+.header div:nth-child(2) button:hover {
+  background-color: #eaeaea;
+}
+@media screen and (min-width: 300px) and (max-width: 500px) {
+  .header {
+    font-size: 0.65rem;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  .header div:nth-child(2) span {
+    margin-left: 0;
+    align-items: center;
+  }
+}

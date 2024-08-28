@@ -1,0 +1,16 @@
+div {
+    .loader{
+        border : 3px solid #e58181;
+        border-bottom: #a62626;
+        border-radius: 50%;
+        animation: rotation 1s linear infinite;
+    }
+}
+@keyframes rotation {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,55 @@
+.form h3 {
+  border-bottom: 3px solid #a62626;
+  font-weight: bold;
+}
+
+.form label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+.form input {
+  display: block;
+  width: 300px;
+  padding: 5px;
+  border: 1px solid silver;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+.form button {
+  background-color: #a62626;
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  width: fit-content;
+}
+.form button:disabled {
+  opacity: 0.5;
+}
+.form p {
+  background-color: #a62626;
+  margin-bottom: 20px;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+}
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  .form h3,
+  .form input {
+    margin: 0 auto;
+  }
+  .form label {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .form div {
+    display: flex;
+    justify-content: center;
+  }
+  .form button {
+    margin-top: 30px;
+  }
+}

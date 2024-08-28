@@ -1,0 +1,19 @@
+div .loader {
+  border: 3px solid #fff;
+  border-bottom: 3px solid #a62626;
+  border-right: 3px solid #a62626;
+  border-top: 3px solid #a62626;
+  border-radius: 50%;
+  animation: rotation 1s linear infinite;
+}
+div .loader ~ div {
+  color: #a62626;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} /*# sourceMappingURL=Loader.module.css.map */
