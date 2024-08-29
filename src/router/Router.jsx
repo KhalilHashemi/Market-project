@@ -7,6 +7,7 @@ import PageNotFound from "../pages/404";
 import { useQuery } from "@tanstack/react-query";
 import { getProfile } from "../services/user";
 import Loader from "../components/modules/Loader";
+import DetailsPage from "../pages/DetailsPage";
 
 function Router() {
   const { data, isLoading } = useQuery({
@@ -33,6 +34,7 @@ function Router() {
           data?.data?.role === "ADMIN" ? <AdminPage /> : <Navigate to="/" />
         }
       />
+      <Route path="/details/:id" element={<DetailsPage />} />
       <Route path="*" element={<PageNotFound />} />
     </Routes>
   );
